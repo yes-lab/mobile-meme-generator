@@ -1,0 +1,121 @@
+body {
+    font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1.home {
+    padding-top: 60px;
+}
+
+#uploader,
+#loading {
+    text-align: center;
+}
+
+.pic-icon,
+#loading {
+    display: none;
+}
+
+#pic {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+#memed-pic {
+    padding: 10px;
+    text-align: center;
+}
+
+#imgur-pic {
+    width: 100%;
+    max-width: 800px;
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+.social-icons li {
+    width: 24%;
+    display: inline-block;
+    text-align: center;
+}
+
+.social-icons li img {
+    width: 100%;
+    max-width: 100px;
+}
+
+.js #pic {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+#pic + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.no-js #pic + label {
+    display: none;
+}
+
+#pic:focus + label,
+#pic.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+#pic + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+#pic + label figure {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid #000;
+    background-color: #fff;
+    display: block;
+    padding: 20px;
+    margin: 0 auto 10px;
+}
+
+#pic + label figure {
+    img {
+      width: 90%;
+      height: 90%;
+    }
+}
+
+#pic:focus + label figure,
+#pic.has-focus + label figure,
+#pic + label:hover figure {
+    background-color: #ccc;
+}
