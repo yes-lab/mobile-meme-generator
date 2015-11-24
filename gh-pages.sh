@@ -1,7 +1,8 @@
 #!/bin/bash
 
 npm install -g gulp
-
+cp app/js/config.json.sample app/js/config.json
+sed -i -e 's/"imgur_client_id": ""/"imgur_client_id": "f0972432933fc36"/g' app/js/config.json
 gulp
 cd dist
 git init
