@@ -48,6 +48,7 @@
     "filereader": "^0.10.3",
     "is-mobile": "^0.2.2",
     "jquery": "^2.1.4",
+    "rlite-router": "^1.1.1",
     "watermarkjs": "github:contolini/watermarkjs"
   }
 }

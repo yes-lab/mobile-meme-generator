@@ -6,10 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mobile Meme Generator</title>
 
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:image" content="">
+    
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Title Here" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="" /> 
+    <meta property="og:site_name" content="" />
+    <meta property="fb:admins" content="Facebook numeric ID" />
+
     <!-- Place favicon.ico in the root directory -->
 
     <!-- build:css css/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/normalize-css/normalize.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -26,7 +44,7 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <h1 class="home"></h1>
+    <h1>Mobile Meme Generator</h1>
 
     <div id="uploader">
       <input type="file" accept="image/*" id="pic" name="pic" />
@@ -43,7 +61,19 @@
 
     <div id="loading">
       <img src="images/icon_loading.gif" height="50" width="50" />
-      <div id="msg">Reticulating splines...</div>
+      <div id="msg">Processing image...</div>
+    </div>
+
+    <div id="social">
+      <ul class="social-icons">
+        <li><a href="#" id="facebook" class="social-icon"><img src="../images/social/facebook.png" alt="Share on Facebook"></a></li>
+        <li><a href="#" id="twitter" class="social-icon"><img src="../images/social/twitter.png" alt="Share on Twitter"></a></li>
+        <li><a href="#" id="pinterest" class="social-icon"><img src="../images/social/pinterest.png" alt="Share on Pinterest"></a></li>
+        <li><a href="#" id="google-plus" class="social-icon"><img src="../images/social/google-plus.png" alt="Share on Google Plus"></a></li>
+      </ul>
+      <div id="memed-pic">
+        <a href="#" id="page-link"><img id="imgur-pic" src="" alt="" /></a>
+      </div>
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
